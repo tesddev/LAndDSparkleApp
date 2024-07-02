@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CharacterDetailView: View {
-    let character: Result
+    let character: CharacterDetails
     let url = URL(string: "fb.com")
 
     var body: some View {
@@ -23,5 +23,5 @@ struct CharacterDetailView: View {
 }
 
 #Preview {
-    CharacterDetailView(character: Result.empty)
+    CharacterDetailView(character: CharacterDetails.empty)
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 class NetworkManager: ObservableObject {
-    @Published var characters: [Result] = []
+    @Published var characters: [CharacterDetails] = []
 
     func fetchCharacters() {
         guard let url = URL(string: "https://rickandmortyapi.com/api/character") else { return }
