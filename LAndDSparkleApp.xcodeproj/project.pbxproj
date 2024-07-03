@@ -41,6 +41,7 @@
 		634636E02C35DACA0089F61A /* LAndDSparkleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAndDSparkleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		634636E22C35DACA0089F61A /* CustomUIKitViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIKitViewTests.swift; sourceTree = "<group>"; };
 		634636EC2C3602060089F61A /* LinearGradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientTests.swift; sourceTree = "<group>"; };
+		6346372A2C360C8E0089F61A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		63BAF7DB2C3421B9001326B1 /* LAndDSparkleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAndDSparkleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BAF7DE2C3421B9001326B1 /* LAndDSparkleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAndDSparkleAppApp.swift; sourceTree = "<group>"; };
 		63BAF7E02C3421B9001326B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		63BAF7D22C3421B9001326B1 = {
 			isa = PBXGroup;
 			children = (
+				6346372A2C360C8E0089F61A /* Package.swift */,
 				63BAF7DD2C3421B9001326B1 /* LAndDSparkleApp */,
 				634636E12C35DACA0089F61A /* LAndDSparkleAppTests */,
 				63BAF7DC2C3421B9001326B1 /* Products */,
@@ -559,8 +561,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/nalexn/ViewInspector";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.11;
+				kind = exactVersion;
+				version = 0.9.11;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
