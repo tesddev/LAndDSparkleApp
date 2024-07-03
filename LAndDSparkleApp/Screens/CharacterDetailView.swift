@@ -12,30 +12,39 @@ struct CharacterDetailView: View {
     let url = URL(string: "fb.com")
 
     var body: some View {
-        VStack {
-            AsyncImage(url: URL(string: character.image ?? "url")) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 300, height: 300)
-                    .cornerRadius(20)
-            } placeholder: {
-                ProgressView()
-            }
-            .frame(width: 100, height: 100)
-            Spacer()
-                .frame(height: 150)
-            ZStack {
-                CustomUIKitViewRepresentable()
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: [.gray.opacity(0.5), .blue, ]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .edgesIgnoringSafeArea(.all)
+            VStack {
+                AsyncImage(url: URL(string: character.image ?? "url")) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 300, height: 300)
+                        .cornerRadius(20)
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(width: 100, height: 100)
+                Spacer()
                     .frame(height: 150)
-                VStack {
-                    Text("Name: \(character.name ?? "Tes")").font(.largeTitle).foregroundColor(.white)
-                    Text("Status: \(character.status ?? "Tes")").foregroundColor(.white)
-                    Text("Species: \(character.species ?? "Human")").foregroundColor(.white)
+                ZStack {
+                    CustomUIKitViewRepresentable()
+                        .frame(height: 150)
+                    VStack {
+                        Text("Name: \(character.name ?? "Tes")").font(.largeTitle).foregroundColor(.white)
+                        Text("Status: \(character.status ?? "Tes")").foregroundColor(.white)
+                        Text("Species: \(character.species ?? "Human")").foregroundColor(.white)
+                    }
                 }
             }
+            .padding()
         }
-        .padding()
+//        .padding()
         .navigationBarTitle(Text(character.name ?? ""), displayMode: .inline)
     }
 }

@@ -12,7 +12,7 @@ class CustomUIKitView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor(hexString: "#238636")
-        backgroundColor = .black.withAlphaComponent(0.8)
+        backgroundColor = UIColor(hexString: "#0f67B1").withAlphaComponent(0.8)
         self.layer.cornerRadius = 10
         self.layer.masksToBounds = true
     }
