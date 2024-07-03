@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Xcode
+      uses: maxim-lobanov/setup-xcode@v2
+
+    - name: Install dependencies
+      run: swift package resolve
+
+    - name: Build app
+      run: xcodebuild -scheme LAndDSparkleApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=latest' build
+
+    - name: Run tests
+      run: xcodebuild -scheme LAndDSparkleApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=latest' test
