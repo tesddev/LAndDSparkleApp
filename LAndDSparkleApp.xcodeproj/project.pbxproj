@@ -12,6 +12,8 @@
 		634636CE2C34787B0089F61A /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636CD2C34787B0089F61A /* CharacterListView.swift */; };
 		634636D02C3478850089F61A /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636CF2C3478850089F61A /* CharacterDetailView.swift */; };
 		634636D32C34A61E0089F61A /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636D22C34A61E0089F61A /* UIColor + Extension.swift */; };
+		634636E32C35DACA0089F61A /* CustomUIKitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636E22C35DACA0089F61A /* CustomUIKitViewTests.swift */; };
+		634636EB2C35E8740089F61A /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 634636EA2C35E8740089F61A /* ViewInspector */; };
 		63BAF7DF2C3421B9001326B1 /* LAndDSparkleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAF7DE2C3421B9001326B1 /* LAndDSparkleAppApp.swift */; };
 		63BAF7E12C3421B9001326B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAF7E02C3421B9001326B1 /* ContentView.swift */; };
 		63BAF7E32C3421BB001326B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BAF7E22C3421BB001326B1 /* Assets.xcassets */; };
@@ -19,12 +21,24 @@
 		63BAF7EE2C342247001326B1 /* CustomUIKitViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAF7ED2C342247001326B1 /* CustomUIKitViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		634636E42C35DACA0089F61A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63BAF7D32C3421B9001326B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63BAF7DA2C3421B9001326B1;
+			remoteInfo = LAndDSparkleApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		634636C82C3478120089F61A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		634636CA2C3478390089F61A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		634636CD2C34787B0089F61A /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		634636CF2C3478850089F61A /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		634636D22C34A61E0089F61A /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		634636E02C35DACA0089F61A /* LAndDSparkleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAndDSparkleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		634636E22C35DACA0089F61A /* CustomUIKitViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIKitViewTests.swift; sourceTree = "<group>"; };
 		63BAF7DB2C3421B9001326B1 /* LAndDSparkleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAndDSparkleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BAF7DE2C3421B9001326B1 /* LAndDSparkleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAndDSparkleAppApp.swift; sourceTree = "<group>"; };
 		63BAF7E02C3421B9001326B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +49,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		634636DD2C35DACA0089F61A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634636EB2C35E8740089F61A /* ViewInspector in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63BAF7D82C3421B9001326B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,10 +102,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		634636E12C35DACA0089F61A /* LAndDSparkleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				634636E22C35DACA0089F61A /* CustomUIKitViewTests.swift */,
+			);
+			path = LAndDSparkleAppTests;
+			sourceTree = "<group>";
+		};
 		63BAF7D22C3421B9001326B1 = {
 			isa = PBXGroup;
 			children = (
 				63BAF7DD2C3421B9001326B1 /* LAndDSparkleApp */,
+				634636E12C35DACA0089F61A /* LAndDSparkleAppTests */,
 				63BAF7DC2C3421B9001326B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				63BAF7DB2C3421B9001326B1 /* LAndDSparkleApp.app */,
+				634636E02C35DACA0089F61A /* LAndDSparkleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +154,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		634636DF2C35DACA0089F61A /* LAndDSparkleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634636E62C35DACA0089F61A /* Build configuration list for PBXNativeTarget "LAndDSparkleAppTests" */;
+			buildPhases = (
+				634636DC2C35DACA0089F61A /* Sources */,
+				634636DD2C35DACA0089F61A /* Frameworks */,
+				634636DE2C35DACA0089F61A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				634636E52C35DACA0089F61A /* PBXTargetDependency */,
+			);
+			name = LAndDSparkleAppTests;
+			packageProductDependencies = (
+				634636EA2C35E8740089F61A /* ViewInspector */,
+			);
+			productName = LAndDSparkleAppTests;
+			productReference = 634636E02C35DACA0089F61A /* LAndDSparkleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		63BAF7DA2C3421B9001326B1 /* LAndDSparkleApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63BAF7EA2C3421BB001326B1 /* Build configuration list for PBXNativeTarget "LAndDSparkleApp" */;
@@ -149,6 +202,10 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					634636DF2C35DACA0089F61A = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 63BAF7DA2C3421B9001326B1;
+					};
 					63BAF7DA2C3421B9001326B1 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -163,16 +220,27 @@
 				Base,
 			);
 			mainGroup = 63BAF7D22C3421B9001326B1;
+			packageReferences = (
+				634636E92C35E8740089F61A /* XCRemoteSwiftPackageReference "ViewInspector" */,
+			);
 			productRefGroup = 63BAF7DC2C3421B9001326B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				63BAF7DA2C3421B9001326B1 /* LAndDSparkleApp */,
+				634636DF2C35DACA0089F61A /* LAndDSparkleAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		634636DE2C35DACA0089F61A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63BAF7D92C3421B9001326B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +253,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		634636DC2C35DACA0089F61A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				634636E32C35DACA0089F61A /* CustomUIKitViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63BAF7D72C3421B9001326B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,7 +278,56 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		634636E52C35DACA0089F61A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63BAF7DA2C3421B9001326B1 /* LAndDSparkleApp */;
+			targetProxy = 634636E42C35DACA0089F61A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		634636E72C35DACA0089F61A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5KQK28X5U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tesleemamuda.LAndDSparkleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LAndDSparkleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LAndDSparkleApp";
+			};
+			name = Debug;
+		};
+		634636E82C35DACA0089F61A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L5KQK28X5U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tesleemamuda.LAndDSparkleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LAndDSparkleApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LAndDSparkleApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		63BAF7E82C3421BB001326B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,6 +521,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		634636E62C35DACA0089F61A /* Build configuration list for PBXNativeTarget "LAndDSparkleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				634636E72C35DACA0089F61A /* Debug */,
+				634636E82C35DACA0089F61A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63BAF7D62C3421B9001326B1 /* Build configuration list for PBXProject "LAndDSparkleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -415,6 +549,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		634636E92C35E8740089F61A /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = exactVersion;
+				version = 0.9.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		634636EA2C35E8740089F61A /* ViewInspector */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634636E92C35E8740089F61A /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63BAF7D32C3421B9001326B1 /* Project object */;
 }
