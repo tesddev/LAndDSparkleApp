@@ -11,11 +11,12 @@
 		634636CB2C3478390089F61A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636CA2C3478390089F61A /* NetworkManager.swift */; };
 		634636CE2C34787B0089F61A /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636CD2C34787B0089F61A /* CharacterListView.swift */; };
 		634636D02C3478850089F61A /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636CF2C3478850089F61A /* CharacterDetailView.swift */; };
+		634636D32C34A61E0089F61A /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636D22C34A61E0089F61A /* UIColor + Extension.swift */; };
 		63BAF7DF2C3421B9001326B1 /* LAndDSparkleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAF7DE2C3421B9001326B1 /* LAndDSparkleAppApp.swift */; };
 		63BAF7E12C3421B9001326B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAF7E02C3421B9001326B1 /* ContentView.swift */; };
 		63BAF7E32C3421BB001326B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BAF7E22C3421BB001326B1 /* Assets.xcassets */; };
 		63BAF7E72C3421BB001326B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BAF7E62C3421BB001326B1 /* Preview Assets.xcassets */; };
-		63BAF7EE2C342247001326B1 /* UIKItTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAF7ED2C342247001326B1 /* UIKItTextfield.swift */; };
+		63BAF7EE2C342247001326B1 /* CustomUIKitViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAF7ED2C342247001326B1 /* CustomUIKitViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +24,14 @@
 		634636CA2C3478390089F61A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		634636CD2C34787B0089F61A /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
 		634636CF2C3478850089F61A /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		634636D22C34A61E0089F61A /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		63BAF7DB2C3421B9001326B1 /* LAndDSparkleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAndDSparkleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BAF7DE2C3421B9001326B1 /* LAndDSparkleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAndDSparkleAppApp.swift; sourceTree = "<group>"; };
 		63BAF7E02C3421B9001326B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63BAF7E22C3421BB001326B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63BAF7E42C3421BB001326B1 /* LAndDSparkleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LAndDSparkleApp.entitlements; sourceTree = "<group>"; };
 		63BAF7E62C3421BB001326B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		63BAF7ED2C342247001326B1 /* UIKItTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKItTextfield.swift; sourceTree = "<group>"; };
+		63BAF7ED2C342247001326B1 /* CustomUIKitViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIKitViewRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +54,28 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
-		634636CC2C3478700089F61A /* Views */ = {
+		634636CC2C3478700089F61A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				63BAF7E02C3421B9001326B1 /* ContentView.swift */,
 				634636CD2C34787B0089F61A /* CharacterListView.swift */,
 				634636CF2C3478850089F61A /* CharacterDetailView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		634636D12C34A6080089F61A /* UIKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				634636D22C34A61E0089F61A /* UIColor + Extension.swift */,
+			);
+			path = UIKitExtension;
+			sourceTree = "<group>";
+		};
+		634636D42C34A6AA0089F61A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63BAF7ED2C342247001326B1 /* CustomUIKitViewRepresentable.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -81,13 +99,14 @@
 		63BAF7DD2C3421B9001326B1 /* LAndDSparkleApp */ = {
 			isa = PBXGroup;
 			children = (
+				634636D42C34A6AA0089F61A /* Views */,
+				634636D12C34A6080089F61A /* UIKitExtension */,
 				634636C72C3477FF0089F61A /* Networking */,
+				634636CC2C3478700089F61A /* Screens */,
 				63BAF7DE2C3421B9001326B1 /* LAndDSparkleAppApp.swift */,
-				634636CC2C3478700089F61A /* Views */,
 				63BAF7E22C3421BB001326B1 /* Assets.xcassets */,
 				63BAF7E42C3421BB001326B1 /* LAndDSparkleApp.entitlements */,
 				63BAF7E52C3421BB001326B1 /* Preview Content */,
-				63BAF7ED2C342247001326B1 /* UIKItTextfield.swift */,
 			);
 			path = LAndDSparkleApp;
 			sourceTree = "<group>";
@@ -171,7 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				634636CE2C34787B0089F61A /* CharacterListView.swift in Sources */,
-				63BAF7EE2C342247001326B1 /* UIKItTextfield.swift in Sources */,
+				634636D32C34A61E0089F61A /* UIColor + Extension.swift in Sources */,
+				63BAF7EE2C342247001326B1 /* CustomUIKitViewRepresentable.swift in Sources */,
 				63BAF7E12C3421B9001326B1 /* ContentView.swift in Sources */,
 				634636D02C3478850089F61A /* CharacterDetailView.swift in Sources */,
 				634636CB2C3478390089F61A /* NetworkManager.swift in Sources */,
