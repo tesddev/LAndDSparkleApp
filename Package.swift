@@ -7,6 +7,7 @@
 
 import PackageDescription
 
+// swift-tools-version:5.6
 let package = Package(
     name: "LAndDSparkleApp",
     platforms: [
