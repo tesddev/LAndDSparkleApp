@@ -2,16 +2,26 @@
 //  LAndDSparkleAppTests.swift
 //  LAndDSparkleAppTests
 //
-//  Created by GIGL-MAC on 03/07/2024.
+//  Created by Tes on 03/07/2024.
 //
 
 import XCTest
+import SwiftUI
+import UIKit
 @testable import LAndDSparkleApp
 
-final class LAndDSparkleAppTests: XCTestCase {
-    func testCharacterModel() {
-        let character = Character(id: 1, results: <#[CharacterDetails]?#>, name: "Rick", status: "Alive", species: "Human", image: URL(string: "https://rickandmortyapi.com/api/character/avatar/1.jpeg")!)
-        XCTAssertEqual(character.name, "Rick")
-    }
+class CustomUIKitViewTests: XCTestCase {
     
+    func testCustomUIKitViewInitialization() {
+        // Given
+        let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        
+        // When
+        let customView = CustomUIKitView(frame: frame)
+        
+        // Then
+        XCTAssertEqual(customView.backgroundColor, UIColor(hexString: "#0f67B1").withAlphaComponent(0.8))
+        XCTAssertEqual(customView.layer.cornerRadius, 10)
+        XCTAssertTrue(customView.layer.masksToBounds)
+    }
 }
