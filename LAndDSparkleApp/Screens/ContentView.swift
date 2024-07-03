@@ -16,8 +16,6 @@ struct ContentView: View {
         VStack {
             Text("This is a SwiftUI Text")
                 .padding()
-            UILabelRepresentable(text: "This is a UILabel from UIKit")
-                .padding()
         }
     }
 }
