@@ -1,13 +1,6 @@
-//
-//  Package.swift
-//  LAndDSparkleApp
-//
-//  Created by GIGL-MAC on 03/07/2024.
-//
-
+// swift-tools-version:5.6
 import PackageDescription
 
-// swift-tools-version:5.6
 let package = Package(
     name: "LAndDSparkleApp",
     platforms: [
