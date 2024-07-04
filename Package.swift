@@ -12,7 +12,7 @@ let package = Package(
             targets: ["LAndDSparkleApp"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/your-username/ImageShadowPackage.git", from: "1.0.0")
+        .package(url: "https://github.com/tesddev/ImageShadowPackage.git", from: "1.0.0")
     ],
     targets: [
         .target(
