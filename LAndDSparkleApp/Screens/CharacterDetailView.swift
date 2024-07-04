@@ -22,10 +22,9 @@ struct CharacterDetailView: View {
             .edgesIgnoringSafeArea(.all)
             VStack {
                 if let url = URL(string: character.image ?? "url") {
-                    ShadowURLImage(url: url, shadowColor: .gray, radius: 5, x: 2, y: 2)
+                    ShadowURLImage(url: url, shadowColor: .red, radius: 55, x: 12, y: 12)
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 300, height: 300)
-                        .cornerRadius(20)
                 }
                 Spacer()
                     .frame(height: 150)
