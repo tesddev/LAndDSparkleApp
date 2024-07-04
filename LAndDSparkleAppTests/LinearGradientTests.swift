@@ -10,8 +10,6 @@ import XCTest
 import ViewInspector
 @testable import LAndDSparkleApp
 
-extension LinearGradient: Inspectable {}
-
 final class LinearGradientTests: XCTestCase {
     func testLinearGradient() throws {
         // Given
