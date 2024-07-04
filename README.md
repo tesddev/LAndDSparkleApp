@@ -1,6 +1,6 @@
 # LAndDSparkleApp
 
-LAndDSparkleApp is an iOS application built using SwiftUI and UIKit components. This project demonstrates how to create a Swift Package, integrate it into the main project, and set up continuous integration using GitHub Actions.
+LAndDSparkleApp is an iOS application built using SwiftUI and UIKit components.
 
 ## Features
 
