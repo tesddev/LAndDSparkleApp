@@ -11,13 +11,11 @@ let package = Package(
             name: "LAndDSparkleApp",
             targets: ["LAndDSparkleApp"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/nalexn/ViewInspector", from: "0.9.3")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "LAndDSparkleApp",
-            dependencies: ["ViewInspector"],
+            dependencies: [],
             path: "Sources")
     ]
 )

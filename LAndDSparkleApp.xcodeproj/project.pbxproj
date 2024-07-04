@@ -13,8 +13,7 @@
 		634636D02C3478850089F61A /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636CF2C3478850089F61A /* CharacterDetailView.swift */; };
 		634636D32C34A61E0089F61A /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636D22C34A61E0089F61A /* UIColor + Extension.swift */; };
 		634636E32C35DACA0089F61A /* CustomUIKitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636E22C35DACA0089F61A /* CustomUIKitViewTests.swift */; };
-		634636ED2C3602060089F61A /* LinearGradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634636EC2C3602060089F61A /* LinearGradientTests.swift */; };
-		634636F22C3605A10089F61A /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 634636F12C3605A10089F61A /* ViewInspector */; };
+		63B1292E2C36BFBD00E2DF97 /* CharacterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1292D2C36BFBD00E2DF97 /* CharacterTests.swift */; };
 		63BAF7DF2C3421B9001326B1 /* LAndDSparkleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAF7DE2C3421B9001326B1 /* LAndDSparkleAppApp.swift */; };
 		63BAF7E12C3421B9001326B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAF7E02C3421B9001326B1 /* ContentView.swift */; };
 		63BAF7E32C3421BB001326B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63BAF7E22C3421BB001326B1 /* Assets.xcassets */; };
@@ -40,8 +39,8 @@
 		634636D22C34A61E0089F61A /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		634636E02C35DACA0089F61A /* LAndDSparkleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LAndDSparkleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		634636E22C35DACA0089F61A /* CustomUIKitViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIKitViewTests.swift; sourceTree = "<group>"; };
-		634636EC2C3602060089F61A /* LinearGradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearGradientTests.swift; sourceTree = "<group>"; };
 		6346372A2C360C8E0089F61A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		63B1292D2C36BFBD00E2DF97 /* CharacterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTests.swift; sourceTree = "<group>"; };
 		63BAF7DB2C3421B9001326B1 /* LAndDSparkleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAndDSparkleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BAF7DE2C3421B9001326B1 /* LAndDSparkleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAndDSparkleAppApp.swift; sourceTree = "<group>"; };
 		63BAF7E02C3421B9001326B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				634636F22C3605A10089F61A /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				634636E22C35DACA0089F61A /* CustomUIKitViewTests.swift */,
-				634636EC2C3602060089F61A /* LinearGradientTests.swift */,
+				63B1292D2C36BFBD00E2DF97 /* CharacterTests.swift */,
 			);
 			path = LAndDSparkleAppTests;
 			sourceTree = "<group>";
@@ -174,7 +172,6 @@
 			);
 			name = LAndDSparkleAppTests;
 			packageProductDependencies = (
-				634636F12C3605A10089F61A /* ViewInspector */,
 			);
 			productName = LAndDSparkleAppTests;
 			productReference = 634636E02C35DACA0089F61A /* LAndDSparkleAppTests.xctest */;
@@ -226,7 +223,6 @@
 			);
 			mainGroup = 63BAF7D22C3421B9001326B1;
 			packageReferences = (
-				634636F02C3605A10089F61A /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = 63BAF7DC2C3421B9001326B1 /* Products */;
 			projectDirPath = "";
@@ -262,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				634636ED2C3602060089F61A /* LinearGradientTests.swift in Sources */,
+				63B1292E2C36BFBD00E2DF97 /* CharacterTests.swift in Sources */,
 				634636E32C35DACA0089F61A /* CustomUIKitViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -555,25 +551,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		634636F02C3605A10089F61A /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/nalexn/ViewInspector";
-			requirement = {
-				kind = exactVersion;
-				version = 0.9.11;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		634636F12C3605A10089F61A /* ViewInspector */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 634636F02C3605A10089F61A /* XCRemoteSwiftPackageReference "ViewInspector" */;
-			productName = ViewInspector;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63BAF7D32C3421B9001326B1 /* Project object */;
 }
