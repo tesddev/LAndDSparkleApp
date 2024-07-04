@@ -14,7 +14,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Text("This is a SwiftUI Text")
+            Text("This is a SwiftUI Text for real")
                 .padding()
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
         }
