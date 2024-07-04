@@ -23,7 +23,7 @@ jobs:
       run: swift package resolve
 
     - name: Build app
-      run: xcodebuild -scheme LAndDSparkleApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=latest' build
+      run: xcodebuild -scheme LAndDSparkleApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' build
 
     - name: Run tests
-      run: xcodebuild -scheme LAndDSparkleApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=latest' test
+      run: xcodebuild -scheme LAndDSparkleApp -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' test
