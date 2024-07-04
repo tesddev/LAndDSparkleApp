@@ -11,11 +11,13 @@ let package = Package(
             name: "LAndDSparkleApp",
             targets: ["LAndDSparkleApp"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/your-username/ImageShadowPackage.git", from: "1.0.0")
+    ],
     targets: [
         .target(
             name: "LAndDSparkleApp",
-            dependencies: [],
+            dependencies: ["ImageShadowPackage"],
             path: "Sources")
     ]
 )

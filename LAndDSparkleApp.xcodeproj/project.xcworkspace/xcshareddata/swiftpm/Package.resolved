@@ -1,0 +1,15 @@
+{
+  "originHash" : "3cb26cfee1604d2e2a8be4152a38d247221fc9030b57c7b01e31d7b126805cc1",
+  "pins" : [
+    {
+      "identity" : "imageshadowpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tesddev/ImageShadowPackage.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "12dcd42bee05c876993add42b53fb21fa1f61404"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ImageShadowPackage
 
 struct CharacterDetailView: View {
     let character: CharacterDetails
@@ -20,16 +21,12 @@ struct CharacterDetailView: View {
             )
             .edgesIgnoringSafeArea(.all)
             VStack {
-                AsyncImage(url: URL(string: character.image ?? "url")) { image in
-                    image
-                        .resizable()
+                if let url = URL(string: character.image ?? "url") {
+                    ShadowURLImage(url: url, shadowColor: .gray, radius: 5, x: 2, y: 2)
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 300, height: 300)
                         .cornerRadius(20)
-                } placeholder: {
-                    ProgressView()
                 }
-                .frame(width: 100, height: 100)
                 Spacer()
                     .frame(height: 150)
                 ZStack {
@@ -44,7 +41,6 @@ struct CharacterDetailView: View {
             }
             .padding()
         }
-//        .padding()
         .navigationBarTitle(Text(character.name ?? ""), displayMode: .inline)
     }
 }
